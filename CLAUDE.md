@@ -142,6 +142,8 @@ Phase-3-Review durchgeführt (Methodik + alle Werte/Begründungen in `BALANCING.
 - [x] `README.md` (Projektbeschreibung, lokal starten, bauen, Netlify-Deploy-Hinweise).
 - [x] CLAUDE.md auf Abschlussstand gebracht.
 
+- [x] Nachträglich (User-Feedback): Sticky "Live Stats"-Leiste (`LiveStatsBar.tsx`) auf allen Aktions-Seiten (Farming/Combat/Mining/Slayer/Dungeons/Gear Shop) ergänzt — zeigt Coins/Gear/relevante Skill-Level+XP direkt während des Klickens, bleibt beim Scrollen oben fixiert.
+
 ### Offen
 - Nichts Blockierendes. Deploy (Netlify-Projekt anlegen, GitHub-Repo pushen, DNS bei GoDaddy) macht der User selbst, wie vereinbart.
 
