@@ -3,6 +3,7 @@ import { farmingExpUpgradeCost } from '../../game/systems/farmingSystem'
 import { activeElephantTier, activeRabbitTier } from '../../game/systems/petSystem'
 import { useGameStore } from '../../state/store'
 import { Button } from '../components/Button'
+import { LiveStatsBar } from '../components/LiveStatsBar'
 import { Panel } from '../components/Panel'
 import { StatRow } from '../components/StatRow'
 import { formatCoins, formatNumber } from '../format'
@@ -20,6 +21,7 @@ export function FarmingPage() {
   return (
     <div>
       <h1>Farming</h1>
+      <LiveStatsBar skillIds={['farming']} />
 
       <Panel title="Active pet bonuses">
         <StatRow label="Rabbit (XP bonus: Wheat/Pumpkin/Melon)" value={rabbit ? `+${rabbit.bonus} XP (${rabbit.name})` : 'Locked'} />

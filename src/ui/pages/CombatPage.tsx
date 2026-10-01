@@ -3,6 +3,7 @@ import { ZEALOTS_UNLOCK_COMBAT_LEVEL } from '../../game/data/skills'
 import { activeEndermanTier, activeWolfTier } from '../../game/systems/petSystem'
 import { useGameStore } from '../../state/store'
 import { Button } from '../components/Button'
+import { LiveStatsBar } from '../components/LiveStatsBar'
 import { Panel } from '../components/Panel'
 import { StatRow } from '../components/StatRow'
 import { formatCoins, formatNumber } from '../format'
@@ -19,6 +20,7 @@ export function CombatPage() {
   return (
     <div>
       <h1>Combat</h1>
+      <LiveStatsBar skillIds={['combat']} />
 
       <Panel title="Active pet bonuses">
         <StatRow label="Wolf (bonus Combat XP)" value={wolf ? `+${wolf.bonus} XP (${wolf.name})` : 'Locked'} />

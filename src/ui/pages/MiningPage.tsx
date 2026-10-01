@@ -3,6 +3,7 @@ import { nextDrill } from '../../game/systems/miningSystem'
 import { activeMithrilGolemTier, activeSilverfishTier } from '../../game/systems/petSystem'
 import { useGameStore } from '../../state/store'
 import { Button } from '../components/Button'
+import { LiveStatsBar } from '../components/LiveStatsBar'
 import { Panel } from '../components/Panel'
 import { StatRow } from '../components/StatRow'
 import { formatNumber } from '../format'
@@ -46,6 +47,7 @@ export function MiningPage() {
   return (
     <div>
       <h1>Mining</h1>
+      <LiveStatsBar skillIds={['mining']} />
 
       <Panel title="Active pet bonuses">
         <StatRow label="Silverfish (bonus Mining XP)" value={silverfish ? `+${silverfish.bonus} XP (${silverfish.name})` : 'Locked'} />

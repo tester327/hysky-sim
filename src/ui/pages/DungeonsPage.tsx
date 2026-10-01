@@ -1,6 +1,7 @@
 import { FLOORS } from '../../game/data/dungeons'
 import { useGameStore } from '../../state/store'
 import { Button } from '../components/Button'
+import { LiveStatsBar } from '../components/LiveStatsBar'
 import { Panel } from '../components/Panel'
 import { ProgressBar } from '../components/ProgressBar'
 import { StatRow } from '../components/StatRow'
@@ -14,6 +15,7 @@ export function DungeonsPage() {
   return (
     <div>
       <h1>Dungeons</h1>
+      <LiveStatsBar skillIds={['combat']} showGear />
 
       {game.dungeons.lastReward && (
         <Panel title="Last reward">

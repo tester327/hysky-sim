@@ -2,6 +2,7 @@ import { CRAFT_RECIPES, ENDERMAN_T1, ZOMBIE_T1, ZOMBIE_T2 } from '../../game/dat
 import { zombieT2ClicksRequired } from '../../game/systems/slayerSystem'
 import { useGameStore } from '../../state/store'
 import { Button } from '../components/Button'
+import { LiveStatsBar } from '../components/LiveStatsBar'
 import { Panel } from '../components/Panel'
 import { ProgressBar } from '../components/ProgressBar'
 import { StatRow } from '../components/StatRow'
@@ -26,6 +27,7 @@ export function SlayerPage() {
   return (
     <div>
       <h1>Slayer</h1>
+      <LiveStatsBar skillIds={['slayer', 'combat']} />
 
       {game.slayer.lastDropLabel && (
         <Panel title="Last drop">

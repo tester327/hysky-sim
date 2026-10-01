@@ -1,6 +1,7 @@
 import { GEAR_DIRECT_PURCHASE_COST, HYPERION_COST, HYPERION_GEAR_BONUS } from '../../game/data/economy'
 import { useGameStore } from '../../state/store'
 import { Button } from '../components/Button'
+import { LiveStatsBar } from '../components/LiveStatsBar'
 import { Panel } from '../components/Panel'
 import { StatRow } from '../components/StatRow'
 import { formatCoins, formatNumber } from '../format'
@@ -13,6 +14,7 @@ export function GearShopPage() {
   return (
     <div>
       <h1>Gear Shop</h1>
+      <LiveStatsBar showGear />
 
       <Panel title="Gear">
         <StatRow label="Current Gear" value={formatNumber(game.gear)} tone="accent" />
