@@ -6,5 +6,8 @@ dist/
 .DS_Store
 Thumbs.db
 
+# One-off analysis scripts, not part of the shipped app
+/.scratch/
+
 # Legacy prototype, not part of the build
 /legacy/
