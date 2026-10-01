@@ -11,3 +11,6 @@ Thumbs.db
 
 # Legacy prototype, not part of the build
 /legacy/
+
+# Local Netlify folder
+.netlify

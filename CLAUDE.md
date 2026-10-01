@@ -143,13 +143,15 @@ Phase-3-Review durchgeführt (Methodik + alle Werte/Begründungen in `BALANCING.
 - [x] CLAUDE.md auf Abschlussstand gebracht.
 
 - [x] Nachträglich (User-Feedback): Sticky "Live Stats"-Leiste (`LiveStatsBar.tsx`) auf allen Aktions-Seiten (Farming/Combat/Mining/Slayer/Dungeons/Gear Shop) ergänzt — zeigt Coins/Gear/relevante Skill-Level+XP direkt während des Klickens, bleibt beim Scrollen oben fixiert.
+- [x] GitHub-Repo `tester327/hysky-sim` angelegt (öffentlich) und gepusht.
+- [x] Live auf Netlify deployed: **https://hysky-sim.netlify.app** (Site-ID `c69e8b70-de55-436b-86eb-c14a8c1e8838`, Team "skill50's team"). Team-weite SSO-Zugriffsbeschränkung war für neue Sites default-aktiv (401) — gezielt nur für diese Site deaktiviert (`sso_login: false` per Netlify-API), restliche Sites des Accounts unberührt. Bisher **manueller** Deploy (`netlify deploy --prod`), noch **nicht** an Git-Push gekoppelt — siehe "Nächster Schritt".
 
 ### Offen
 - Nichts Blockierendes. Deploy (Netlify-Projekt anlegen, GitHub-Repo pushen, DNS bei GoDaddy) macht der User selbst, wie vereinbart.
 
 ## Nächster Schritt
 
-Keiner zwingend — Projekt ist aus Code-Sicht fertig. Falls eine neue Session hier weitermacht: zuerst `npm install && npm run dev` lokal prüfen, dann bei Bedarf eine der "Mögliche nächste Ideen" unten mit dem User abstimmen.
+Keiner zwingend — Projekt ist aus Code-Sicht fertig und live auf Netlify. Optional, falls gewünscht: Continuous Deployment einrichten, damit jeder `git push` automatisch neu deployed (aktuell nur manueller `netlify deploy --prod`). Das braucht einmalig eine interaktive GitHub-App-Autorisierung in der Netlify-Oberfläche (Site settings → Build & deploy → Link repository → `tester327/hysky-sim` auswählen), die der User selbst machen muss. Falls eine neue Session hier weitermacht und nichts davon ansteht: zuerst `npm install && npm run dev` lokal prüfen, dann bei Bedarf eine der "Mögliche nächste Ideen" unten mit dem User abstimmen.
 
 ## Mögliche nächste Ideen (nicht beauftragt, nur Vorschläge für später)
 
